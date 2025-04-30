@@ -14,12 +14,18 @@ configurations. These resources are designed to facilitate rapid
 prototyping and help developers integrate PETs into their systems with
 ease.
 
+![Colab Tutorial Preview](images/colab_tutorial.png)
+*A working PET tutorial running in Google Colab with real-time outputs.*
+
 The guide also includes a practical exercise that extends the main
 problem scenario. This challenge encourages readers to explore
 variations of the original use case and deepen their understanding of
 each PET. Detailed solutions and working examples are provided for each
 exercise, providing clear guidance on how to implement PETs in different
 applications.
+
+![Example PET Challenge](images/example_challenge.png)
+*An example of a challenge exercise provided in the guide.*
 
 To ensure the correctness of their implementations, developers use
 provided input datasets as test cases. These datasets serve as
