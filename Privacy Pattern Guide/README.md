@@ -10,7 +10,9 @@ between research findings and real-world technical needs.
 **[Explore the Privacy Pattern Guide](https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vSlzlIJoQdCJNCo7mWNitzwNGA4yhsv7WhDPQCxc8ZDokVXJ_Dl1i2r2T9zEWhPrMEjwLKUNyOeeHrJ/pubhtml?gid=1038081398&single=true)**
 
 ![Privacy Pattern Guide Preview](images/privacy-pattern-guide-technical-preview.png)
+*An example of applications in the technical domain.*
 ![Privacy Pattern Guide Preview](images/privacy-pattern-guide-business-preview.png)
+*An example of applications in the business domain.*
 
 The guide is structured as a table that guides engineers and privacy
 practitioners to the most relevant PETs based on the specific
