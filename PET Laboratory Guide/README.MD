@@ -26,6 +26,24 @@ provided input datasets as test cases. These datasets serve as
 controlled environments for validation, helping users to verify the
 expected behaviour of their PET prototypes.
 
+## List of guides
+
+The following PETs in this guide have been successfully implemented using 
+Google Colab-compatible tools and environments. Each tutorial is designed
+to be practical, reproducible, and immediately usable, with working code
+and hands-on exercises.
+
+| PETs                   | Guide                              |
+|------------------------|------------------------------------|
+| Synthetic Data         | [SD](Synthetic_Data.ipynb)         | 
+| Differential Privacy   | [DP](Differential_Privacy.ipynb)   | 
+| Distributed Learning   | [DL](Distributed_Learning.ipynb)   | 
+| Homomorphic Encryption | [HE](Homomorphic_Encryption.ipynb) | 
+
+The guides should run without errors. If there is a dependency problem, please try the
+and run the requirements.txt file.
+
+
 ## Limitations of the implementation environment
 
 TEEs provide a hardware-based approach to secure computation by

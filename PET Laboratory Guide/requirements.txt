@@ -1,0 +1,36 @@
+# Core ML and Deep Learning Libraries
+torch>=2.0.0
+torchvision>=0.15.0
+scikit-learn>=1.2.0
+matplotlib>=3.7.0
+scipy>=1.10.0
+seaborn>=0.12.2
+
+# Synthetic Data Generation
+sdv>=1.5.0  # Latest stable version for synthetic data generation
+
+# Federated Learning and Dataset Utilities
+flwr[simulation]>=1.6.0
+flwr-datasets[vision]>=0.1.0
+
+# Differential Privacy
+opacus>=1.4.0
+
+# Homomorphic Encryption
+tenseal==0.3.16  # Precompiled wheel for Linux; ensure compatibility with Python 3.11
+
+# Federated Split for Vision Data
+federated-vision-datasets==0.0.4
+
+# Data Processing
+pandas>=1.5.3
+numpy>=1.23.5
+
+# Logging and Utilities
+tqdm>=4.65.0
+seaborn>=0.12.2
+
+# Optional: Resolve known conflicts manually if needed
+protobuf<6.0.0,>=5.29.1
+cryptography<44,>=41.0.5
+fsspec==2025.3.2
