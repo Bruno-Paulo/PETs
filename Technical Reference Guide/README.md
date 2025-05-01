@@ -1,36 +1,26 @@
 ## The Technical Reference Guide
 
-The Technical Reference Guide provides the essential technical
-background required to understand and implement each PET. This guide
-provides detailed, structured entries for each PET covered in the work.
-Each entry includes:
+The **Technical Reference Guide** is a deep-dive resource for understanding the mechanics of each PET. It’s aimed at engineers and researchers who need to evaluate, compare, and implement PETs with technical clarity.
 
-- **Definition:** A formal definition and conceptual background of the
-  PET.
+Each PET entry includes:
 
-- **Current and potential applications:** discussion of its real-world
-  and potential applications, supported by relevant case studies and
-  implementations.
+- **Definition & background**: Core concepts and theoretical basis
+- **Applications**: Real-world and potential use cases, with examples
+- **Efficiency & trade-offs**: Scalability, performance, and utility considerations
+- **Algorithms & protocols**: Core primitives explained with practical framing
+- **Limitations**: Known risks, deployment challenges, and ethical concerns
 
-- **Efficiency and parameters:** A breakdown of its efficiency
-  parameters, scalability considerations, and privacy-utility
-  trade-offs.
+This guide is designed to be modular, comparable across PETs, and extensible — allowing new techniques to be added over time. It helps practitioners move from theoretical interest to real-world deployment with a technical foundation.
 
-- **Primitives and algorithms:** An explanation of its core primitives,
-  algorithms and protocols, presented in both theoretical and practical
-  terms.
+### ✅ Available PETs:
 
-- **Limitations:** A critical review of limitations, risks and
-  constraints, including known challenges in deployment, adoption and
-  ethical concerns.
+| PET                                                                        | Description                                                                                                                     |
+|----------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| [Synthetic Data (SD)](Synthetic Data.md)                                   | Generates artificial datasets that preserve the patterns and statistical properties of the original data.                       |
+| [Differential Privacy (DP)](Differential Privacy.md)                       | Adds noise to data to ensure privacy while preserving overall data utility.                                                     |
+| [Distributed Learning (DL)](Distributed Learning.md)                       | Enables machine learning models to be trained on multiple sensitive data sources without disclosure to parties.                 |
+| [Homomorphic Encryption (HE)](Homomorphic Encryption.md)                   | Allows computations to be performed on encrypted data without decrypting it.                                                    |
+| [Zero-Knowledge Proofs (ZKP)](Zero-Knowledge Proofs.md)                    | A cryptographic method that allows one party to prove the validity of a statement without revealing any underlying information. |
+| [Trusted Execution Environments (TEE)](Trusted Execution Environment.md)   | Ensures the integrity and confidentiality of computations and data in untrusted environments.                                   |
+| [Secure Multi-Party Computation (SMPC)](Secure Multi-Party Computation.md) | Allows multiple parties to collaborate on computations while keeping their input data private.                                  |
 
-The guide is consistent with the broader aim of the thesis of bridging
-the gap between theoretical understanding and real-world implementation
-of PETs. Each PET section is intended to be self-contained, yet
-harmonised with others to facilitate comparative analysis and design
-decisions in privacy-oriented system architectures.
-
-By integrating these elements into a unified and open source guide, the
-project aims to provide engineers and privacy practitioners with a
-modular, extensible, and technically homogeneous resources that can
-adapt to evolving needs and technology landscapes.

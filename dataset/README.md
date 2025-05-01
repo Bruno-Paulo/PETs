@@ -1,65 +1,22 @@
 ### Selecting a Dataset
 
-It became clear from our analysis that healthcare is a domain where
-multiple PETs play an important role. The relevance of this domain
-results from the high sensitivity of healthcare data and the strict
-privacy controls required to manage it effectively, which are in line
-with the objectives of PETs. To support the development of guides that
-teach the implementation of each PET in a real-world context, we need a
-running dataset.
+To create a consistent and realistic foundation for hands-on PET tutorials, we selected a single dataset that supports diverse privacy-preserving scenarios. Healthcare emerged as a strong candidate due to its high data sensitivity, regulatory complexity, and the broad applicability of PETs across clinical, operational, and research use cases.
 
-The healthcare domain was chosen because of its relevance and critical
-role in privacy-preserving research. Indeed, healthcare data is highly
-sensitive and requires strict privacy controls, which are well aligned
-with the goals of PETs. 
+After reviewing several public datasets, we chose the [**Stroke Prediction Dataset**](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data), which contains demographic, health, lifestyle, and outcome data. It’s well-suited for simulating key PET applications such as:
 
-<!-- This is further supported by the mapping shown in
-Table [\[table:domainsAndPETS\]](#table:domainsAndPETS){reference-type="ref"
-reference="table:domainsAndPETS"}, where healthcare is one of the
-domains where all PETs are fully or partially applicable.] -->
+- **Data sharing & analysis**: Explore anonymisation and data synthesis techniques.
+- **Federated learning**: Train models across simulated institutions without sharing raw data.
+- **Privacy-preserving predictions**: Securely predict stroke risk using encrypted or distributed data.
 
-The dataset enables a wide range of use cases, such as:
+The dataset includes:
+- **Demographics**: Gender, age, residence, marital status
+- **Health indicators**: Hypertension, heart disease, BMI, blood glucose
+- **Lifestyle**: Smoking status, occupation
+- **Outcome**: Stroke status (target label)
 
-- **Data sharing and analysis:** Simulate scenarios where patient data
-  is shared for research while ensuring privacy.
+We use this dataset across all PET tutorials, creating a unified, domain-specific context that makes the implementation of privacy techniques more tangible and relevant.
 
-- **Federated learning applications:** Training models across multiple
-  healthcare institutions without centralising sensitive data.
-
-- **Privacy-preserving risk prediction:** Use the dataset to simulate
-  secure computations for stroke prediction while preserving patient
-  privacy.
-
-This dataset will be used accross the guides providing a unified
-practical context for hands-on exercises that teach how to implement
-PETs effectively.
-
-After evaluating several publicly available datasets in the healthcare
-domain, we selected the [**Stroke Prediction Dataset**](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data). This dataset provides data for predicting the
-likelihood of stroke based on patient information, making it an
-interesting resource for illustrating how PETs are used in healthcare.
-In particular, enabling the demonstration of various PETs in realistic
-scenarios. This dataset contains the following attributes:
-
-- **Patient demographics:** Gender, age, marital status and place of
-  residence, providing key information about the patient.
-
-- **Health indicators:** Hypertension, heart disease, body mass index
-  (BMI) and average blood glucose levels, which are important in
-  predicting stroke.
-
-- **Lifestyle information:** Smoking status and job type, which help to
-  understand the patient's risk factors.
-
-- **Outcome label:** Stroke status (1 for stroke, 0 for no stroke),
-  which serves as the primary prediction target.
-
-The structure and features of the dataset provide a robust basis for
-designing exercises to be used in the PET guides that meet the
-objectives of the guides which are to teach the implementation of PETs
-through practical, domain-specific examples.
-
-A summary of the proposed exercises for each PET is given bellow:
+#### 🧪 PET Exercises Overview
 
 
   | *PET*    | *Exercise*                                                                                                                                                                            |

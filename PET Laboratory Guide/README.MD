@@ -39,12 +39,12 @@ Google Colab-compatible tools and environments. Each tutorial is designed
 to be practical, reproducible, and immediately usable, with working code
 and hands-on exercises.
 
-| PETs                   | Guide                              |
-|------------------------|------------------------------------|
-| Synthetic Data         | [SD](Synthetic_Data.ipynb)         | 
-| Differential Privacy   | [DP](Differential_Privacy.ipynb)   | 
-| Distributed Learning   | [DL](Distributed_Learning.ipynb)   | 
-| Homomorphic Encryption | [HE](Homomorphic_Encryption.ipynb) | 
+| PETs                   | Tutorial                                                                                    |
+|------------------------|---------------------------------------------------------------------------------------------|
+| Synthetic Data         | [SD](https://colab.research.google.com/drive/1h5NqIZDZKtV9WfIaFHFp4Qd6O_21bCOm?usp=sharing) | 
+| Differential Privacy   | [DP](https://colab.research.google.com/drive/16g49145eZUnPEEgIC_phnHClrb6pRCcG?usp=sharing) | 
+| Distributed Learning   | [DL](https://colab.research.google.com/drive/1xtVGzNHkPM5cMImY-oDqReMv5FtUCmG9?usp=sharing) | 
+| Homomorphic Encryption | [HE](https://colab.research.google.com/drive/1SuQxaVb15CaNQjIUKLtYIrqRarylmtOK?usp=sharing)                                                          | 
 
 The guides should run without errors. If there is a dependency problem, please try the
 and run the requirements.txt file.
