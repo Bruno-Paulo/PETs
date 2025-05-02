@@ -1,3 +1,5 @@
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.15320566.svg)](https://doi.org/10.5281/zenodo.15320566)
+
 # A Practical Guide to Privacy Enhancing Technologies
 
 This repository is a curated and practical resource to help engineers, researchers, and privacy practitioners 
