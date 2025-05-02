@@ -1,91 +1,80 @@
-# The PET Laboratory Guide
+# 🧪 The PET Laboratory Guide
 
-The PET Laboratory Guide is a hands-on resource designed to help
-engineers practically apply Privacy Enhancing Technologies (PETs) to
-real-world scenarios. It introduces an example problem that serves as a
-central theme throughout the guide, providing a consistent context for
-learning and experimentation.
+Welcome to the **PET Laboratory Guide** — a hands-on companion for learning and applying **Privacy Enhancing Technologies (PETs)** in real-world scenarios. This guide is designed to be practical, accessible, and interactive, helping engineers and learners explore PETs through code.
 
-## Structure of the guide
+---
 
-To support this, the guide includes a *cookbook*-style section with
-clear, step-by-step instructions, along with the necessary code and
-configurations. These resources are designed to facilitate rapid
-prototyping and help developers integrate PETs into their systems with
-ease.
+## 🔍 Overview
+
+The lab centers around a **single healthcare dataset**, used across all tutorials to maintain consistency. You’ll work through real use cases like:
+
+- 🧬 **Privacy-preserving data analysis**
+- 🤝 **Collaborative model training without data sharing**
+- 🔐 **Secure computations on sensitive attributes**
+
+Each notebook in the guide follows a *cookbook-style* structure with:
+
+- A clear problem scenario
+- Step-by-step implementation
+- Interactive exercises
+- Code and validation examples
+
+All tutorials run in **Google Colab**, requiring no local setup.
+
+> ✅ Just open, run, and explore — it works straight from your browser.
 
 ![Colab Tutorial Preview](images/colab_tutorial.png)
-*A working PET tutorial running in Google Colab with real-time outputs.*
+*Live PET implementation in Google Colab.*
 
-The guide also includes a practical exercise that extends the main
-problem scenario. This challenge encourages readers to explore
-variations of the original use case and deepen their understanding of
-each PET. Detailed solutions and working examples are provided for each
-exercise, providing clear guidance on how to implement PETs in different
-applications.
+---
+
+## 📚 Tutorials
+
+The following PETs are implemented using Colab-compatible tools. Each link opens an interactive notebook with fully working code.
+
+| PET                              | Tutorial                                                                                      |
+|----------------------------------|-----------------------------------------------------------------------------------------------|
+| **Synthetic Data (SD)**          | [Open Notebook](https://colab.research.google.com/drive/1h5NqIZDZKtV9WfIaFHFp4Qd6O_21bCOm?usp=sharing) |
+| **Differential Privacy (DP)**   | [Open Notebook](https://colab.research.google.com/drive/16g49145eZUnPEEgIC_phnHClrb6pRCcG?usp=sharing) |
+| **Distributed Learning (DL)**  | [Open Notebook](https://colab.research.google.com/drive/1xtVGzNHkPM5cMImY-oDqReMv5FtUCmG9?usp=sharing) |
+| **Homomorphic Encryption (HE)** | [Open Notebook](https://colab.research.google.com/drive/1SuQxaVb15CaNQjIUKLtYIrqRarylmtOK?usp=sharing) |
+
+> If you encounter dependency issues, run the provided `requirements.txt` at the start of each notebook.
+
+---
+
+## 🧩 Extended Challenges
+
+Each tutorial includes an **optional challenge** that builds on the main scenario, encouraging deeper understanding through applied problem-solving. Example: simulate secure stroke risk prediction using encrypted or distributed data inputs.
 
 ![Example PET Challenge](images/example_challenge.png)
-*An example of a challenge exercise provided in the guide.*
+*Bonus exercises simulate advanced use cases.*
 
-To ensure the correctness of their implementations, developers use
-provided input datasets as test cases. These datasets serve as
-controlled environments for validation, helping users to verify the
-expected behaviour of their PET prototypes.
+---
 
-## List of guides
+## ⚠️ What’s Not Included (Yet)
 
-The following PETs in this guide have been successfully implemented using 
-Google Colab-compatible tools and environments. Each tutorial is designed
-to be practical, reproducible, and immediately usable, with working code
-and hands-on exercises.
+Some PETs couldn’t be implemented in Colab due to technical constraints:
 
-| PETs                   | Tutorial                                                                                    |
-|------------------------|---------------------------------------------------------------------------------------------|
-| Synthetic Data         | [SD](https://colab.research.google.com/drive/1h5NqIZDZKtV9WfIaFHFp4Qd6O_21bCOm?usp=sharing) | 
-| Differential Privacy   | [DP](https://colab.research.google.com/drive/16g49145eZUnPEEgIC_phnHClrb6pRCcG?usp=sharing) | 
-| Distributed Learning   | [DL](https://colab.research.google.com/drive/1xtVGzNHkPM5cMImY-oDqReMv5FtUCmG9?usp=sharing) | 
-| Homomorphic Encryption | [HE](https://colab.research.google.com/drive/1SuQxaVb15CaNQjIUKLtYIrqRarylmtOK?usp=sharing)                                                          | 
+### ❌ Trusted Execution Environments (TEE)
 
-The guides should run without errors. If there is a dependency problem, please try the
-and run the requirements.txt file.
+- **Why not?** TEE platforms (e.g. Intel SGX) require dedicated CPU hardware not available in virtual Colab environments.
+- **Alternatives:** Real TEE tutorials must run on compatible hardware or VMs.
 
+### ❌ Zero-Knowledge Proofs (ZKP)
 
-## Limitations of the implementation environment
+- **Why not?** Most ZKP frameworks (ZoKrates, Circom) are Rust/C++ based and require CLI tools or Docker, which Colab doesn't support.
+- **Issues faced:** No Rust, limited memory, no root access, long preprocessing times.
 
-TEEs provide a hardware-based approach to secure computation by
-isolating sensitive code and data within protected enclaves.
-Implementing a tutorial on TEEs in Google Colab is infeasible due to the
-platform's lack of support for the necessary hardware. TEEs such as
-Intel SGX, require specific CPU features that are not available in
-Colab's virtualised environment. While it is technically possible to
-simulate TEEs using tools such as Gramine in a non-secure mode, such
-simulations do not reflect the real security characteristics of a TEE.
+### ❌ Secure Multi-Party Computation (SMPC)
 
-A TEE tutorial would require users to run code on compatible local
-hardware or use specialised virtual machines, which contradicts our goal
-of providing universally accessible tutorials.
+- **Why not?** Frameworks like CrypTen need multi-processing and socket communication, both restricted in Colab.
+- **Challenge:** Colab’s single-process model kills background jobs needed for SMPC.
 
-The practical implementation of ZKPs in Google Colab poses technical
-challenges. Most mature ZKP frameworks, such as ZoKrates and Circom are
-written in Rust and C++, and are not natively supported in Colab. We
-tried to use Python wrappers or install the full toolchains hit
-roadblocks due to Colab's lack of support for Rust environments, Docker
-containers, and root access. In addition, ZKP computations are
-resource-intensive, requiring extensive pre-processing and circuit
-compilation that exceeds Colab's time and memory limits. Given these
-limitations ZKPs were deemed impractical to implement as a tutorial.
+> These PETs are better explored on local setups or dedicated servers with hardware and OS-level control.
 
-SMPC allows multiple parties to jointly compute a function over their
-private inputs without revealing them to each other. CrypTen, a
-PyTorch-based SMPC framework, was initially considered for
-implementation. However, CrypTen relies heavily on multi-processing and
-*inter-process communication (IPC)*, both of which are limited in the
-Google Colab architecture. The notebook model in Colab is designed for
-single-process execution and does not reliably support forking or
-spawning new processes. Colab also restricts socket-based communication
-and shared memory access, both of which are essential for CrypTen's
-secure computation protocols. Furthermore, CrypTen's reliance on
-background processes clashes with Colab's aggressive resource
-management, where inactive or secondary processes can be terminated
-prematurely. These limitations make Colab unsuitable for realistic SMPC
-tutorials, which require local machines or dedicated cloud servers.
+---
+
+## 🙋 Need Help?
+
+If a notebook doesn’t run or you’d like to contribute a new example, please open an issue or pull request in the main repository.

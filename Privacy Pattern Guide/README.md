@@ -1,20 +1,35 @@
-## The Privacy Pattern Guide
+# 🧭 The Privacy Pattern Guide
 
-The **Privacy Pattern Guide** is a practical tool designed to help practitioners choose the right PET for their specific context. It maps PET techniques to real-world technical and business use cases based on domain-specific research and implementation patterns.
+The **Privacy Pattern Guide** is a decision support tool that maps Privacy Enhancing Technologies (PETs) to common real-world use cases. It helps engineers, data scientists and privacy leaders choose the right PET for their problem - based on real-world deployments.
 
-🔗 **[Explore the Privacy Pattern Guide](https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vSlzlIJoQdCJNCo7mWNitzwNGA4yhsv7WhDPQCxc8ZDokVXJ_Dl1i2r2T9zEWhPrMEjwLKUNyOeeHrJ/pubhtml?gid=1038081398&single=true)**
+## 🔗 Explore the guide
 
-![Privacy Pattern Guide Preview](images/privacy-pattern-guide-technical-preview.png)
-*An example of applications in the technical domain.*
-![Privacy Pattern Guide Preview](images/privacy-pattern-guide-business-preview.png)
-*An example of applications in the business domain.*
+👉 [**Open the Privacy Pattern Guide**](https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vSlzlIJoQdCJNCo7mWNitzwNGA4yhsv7WhDPQCxc8ZDokVXJ_Dl1i2r2T9zEWhPrMEjwLKUNyOeeHrJ/pubhtml?gid=1038081398&single=true)
 
-The guide is structured as a table, helping engineers, data scientists, and privacy leads quickly understand:
+This guide is structured as a table of linked patterns:
 
-- **Where** PETs are most commonly applied
-- **How** they solve privacy challenges across industries
-- **Which** PET is most appropriate for a given use case
+- **🔍 Use Cases** to PET techniques
+- **🏭 Industries** to applications
+- **🛠 Technical & Business Requirements** to deployment examples
 
-Each pattern reflects insights drawn from an extensive literature review of PET deployments. This makes the guide a bridge between theoretical possibilities and proven practice, grounded in actual industry adoption.
+Each entry reflects a synthesis of academic research and real-world PET projects.
 
-Whether you're implementing federated learning in finance or evaluating synthetic data in healthcare, the guide provides actionable mappings to help you decide.
+---
+
+## Visual previews
+
+![Technical Applications](images/privacy-pattern-guide-technical-preview.png)
+*Applications in data science and engineering contexts.*
+
+![Business Applications](images/privacy-pattern-guide-business-preview.png)
+*Applications in healthcare, finance and operations.*
+
+---
+
+##  🎯 Who should use this?
+
+- **Engineers & Architects** - Evaluating privacy solutions for systems.
+- **Product managers** - aligning PETs with risk and compliance requirements.
+- **Researchers & Students** - exploring applied use cases.
+
+> Whether you're building a federated learning system in finance or validating data synthesis in healthcare, this guide will help you find the right PET for the job.

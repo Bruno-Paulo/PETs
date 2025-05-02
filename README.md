@@ -29,17 +29,17 @@ Here are some of the core PETs this repository explores:
 
 This project is divided into three interconnected guides, each addressing a different aspect of PET adoption:
 
-### 🧠 1. [The Technical Reference Guide](Technical Reference Guide/README.md)
+### 🧠 1. [The Technical Reference Guide](Technical%20Reference%20Guide/README.md)
 
 A detailed reference manual for each PET — covering their definitions, algorithms, practical use cases, efficiency trade-offs, and known limitations. It aims to bridge academic concepts with engineering realities and is designed to be modular and extensible.
 
-### 🧭 2. [The Privacy Pattern Guide](Privacy Pattern Guide/README.md)
+### 🧭 2. [The Privacy Pattern Guide](Privacy%20Pattern%20Guide/README.md)
 
 An interactive decision-support tool that helps you choose appropriate PETs based on real-world technical and business use cases.
 
 🔗 **[Explore the Guide](https://docs.google.com/spreadsheets/u/2/d/e/2PACX-1vSlzlIJoQdCJNCo7mWNitzwNGA4yhsv7WhDPQCxc8ZDokVXJ_Dl1i2r2T9zEWhPrMEjwLKUNyOeeHrJ/pubhtml?gid=1038081398&single=true)**
 
-### 🧪 3. [The PET Laboratory Guide](PET Laboratory Guide/README.MD)
+### 🧪 3. [The PET Laboratory Guide](PET%20Laboratory%20Guide/README.MD)
 
 A collection of hands-on tutorials designed for Google Colab. Each tutorial walks through a PET implementation in a consistent real-world scenario, with working code, exercises, and test validations.
 

@@ -1,22 +1,35 @@
-### Selecting a Dataset
+# 🗂️ Dataset selection for PET tutorials
 
-To create a consistent and realistic foundation for hands-on PET tutorials, we selected a single dataset that supports diverse privacy-preserving scenarios. Healthcare emerged as a strong candidate due to its high data sensitivity, regulatory complexity, and the broad applicability of PETs across clinical, operational, and research use cases.
+To ensure consistency across our tutorials, we have selected a real-world healthcare dataset that supports a wide range of PET techniques. The aim is to ground each tutorial in a common, realistic context.
 
-After reviewing several public datasets, we chose the [**Stroke Prediction Dataset**](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data), which contains demographic, health, lifestyle, and outcome data. It’s well-suited for simulating key PET applications such as:
+---
 
-- **Data sharing & analysis**: Explore anonymisation and data synthesis techniques.
-- **Federated learning**: Train models across simulated institutions without sharing raw data.
-- **Privacy-preserving predictions**: Securely predict stroke risk using encrypted or distributed data.
+## 🏥 Why Healthcare?
 
-The dataset includes:
-- **Demographics**: Gender, age, residence, marital status
-- **Health indicators**: Hypertension, heart disease, BMI, blood glucose
-- **Lifestyle**: Smoking status, occupation
-- **Outcome**: Stroke status (target label)
+Healthcare offers:
 
-We use this dataset across all PET tutorials, creating a unified, domain-specific context that makes the implementation of privacy techniques more tangible and relevant.
+- **📊 High data sensitivity** - requiring strong privacy protections.
+- **⚖️ Complex regulations** - making PETs a practical necessity.
+- **🔁 Repetitive workflows** - ideal for reproducible privacy patterns.
 
-#### 🧪 PET Exercises Overview
+After reviewing several datasets, we selected the following:
+
+👉 [**Stroke Prediction Dataset**](https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset/data)
+
+It includes demographic, lifestyle and clinical variables - allowing for multiple PET exercises.
+
+---
+
+##  📑 Dataset features
+
+- **Demographics** - age, sex, housing type, marital status
+- **Health metrics** - BMI, hypertension, heart disease, glucose levels
+- **Lifestyle** - smoking status, work type
+- **Outcome** - stroke incidence (target variable)
+
+---
+
+##  🧪 PET Exercise Mapping
 
 
   | *PET*    | *Exercise*                                                                                                                                                                            |
@@ -28,3 +41,7 @@ We use this dataset across all PET tutorials, creating a unified, domain-specifi
   | **ZKP**  | Illustrate how sensitive attributes, such as smoking status or average glucose level, can be used to construct proofs to validate calculations without revealing the underlying data. |
   | **TEE**  | Simulate secure computations to predict attributes such as stroke status or heart disease demonstrating how TEEs can protect the computation logic.                                   |
   | **SMPC** | Partition the dataset by occupation or address to demonstrate how to perform collaborative computation across institutions while maintaining privacy.                                 | 
+
+---
+
+> This shared dataset serves as a **common thread** through all tutorials - making the exercises relatable, practical and domain-specific.
